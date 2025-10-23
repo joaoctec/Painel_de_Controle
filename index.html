@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Cadastro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<header>
+        <h1>Painel de Cadastro de Usuários</h1>
+</header>
+
+<body>
+
+    <main>
+        <section class="container-form">
+            <h2>Cadastrar Novo Usuário</h2>
+            <form id="form-cadastro">
+                <div>
+                    <label for="nome">Nome completo*:</label><br>
+                    <input type="text" id="nome" name="nome" required> <br> <br>
+                </div>
+
+                <div>
+                    <label for="email">E-mail*:</label> <br>
+                    <input type="email" id="email" name="email" required> <br> <br>
+
+                </div>
+
+                <div>
+                    <label for="idade">Idade*:</label> <br>
+                    <input type="number" id="idade" name="idade" required><br> <br>
+                </div>
+
+                <div>
+                    <label for="cargo">Cargo*:</label> <br>
+                    <input type="text" id="cargo" name="cargo" required> <br> <br>
+                </div>
+
+                <div>
+                    <button type="submit" id="btn-cadastrar">Cadastrar Usuário</button> <br>
+                </div>
+            </form>
+        </section>
+
+        <br>
+
+        <section class="container-busca">
+            <h2>Buscar Usuários</h2>
+            <label for="campo-busca">Buscar:</label>
+            <input type="search" id="campo-busca" placeholder="Digite um nome para buscar">
+        </section>
+
+        <section id="lista-usuarios" class="container-cards">
+        </section>
+    </main>
+
+    <footer>
+        <p>&#169; 2025 - João Antunes & Davi Rodrigues</p>
+    </footer>
+
+    <script src="js/card.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
