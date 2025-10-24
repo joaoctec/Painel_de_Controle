@@ -36,7 +36,7 @@ main{
 }
 
 button:hover{
-    background-color: #b9f1d6;
+    background-color: #40b07a;
      box-shadow: 0 4px 6px rgba(26, 26, 11, 0.922);
 
     
@@ -55,31 +55,26 @@ button:visited{
 
 .btn-cadastrar{
 
-    background-color: rgb(48, 131, 213);
-    color: aliceblue;
-    padding: 15px 25px;
-    border: none;
+    background-color: rgb(6, 35, 63);
+    color: rgb(122, 229, 232);
     margin: 10px;
     font-size: 14px;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.35 ease-in-out;
     box-shadow: 0 4px 8px rgba(0,0,0,0,25);
-    width: 99px;
-    height: 100px;
-   
- 
+    
 }
 
 /*Estrutura de busca */
 input{
-    width: 200px;
-    height: 20px;
+    width: 300px;
+    height: 30px;
     border-radius: 8px;
 }
 
 .container-busca input{
-    height: 25px;
+    height: 30px;
 }
 
 .container-busca{
@@ -109,8 +104,10 @@ input{
 }
 
 .card-usuario {
+    overflow-wrap: break-word;
     background-color: white;
     padding: 16px;
+    margin: 20px;
     border-radius: 8px; 
     border: 1px solid #0d0f36; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
