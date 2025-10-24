@@ -1,3 +1,4 @@
+/*cabesalio*/
 header{
     margin: 0;
     padding: 10px;
@@ -8,24 +9,19 @@ header{
     
 }
 
+/*corpo*/
 body{
     margin: 0;
     
 }
 
-input{
-    width: 200px;
-    height: 20px;
-    border-radius: 8px;
-}
-.container-busca input{
-    height: 25px;
-}
-
+/*Estrutura Principal*/
 main{
     padding: 10px;
-    background: linear-gradient(#294380,#69d2cd,#b9f1d6,#f1f6ce);
+    background: linear-gradient(#69d2cd,#b9f1d6,#f1f6ce);
 }
+
+/*Estrutura do Formulario*/
 .container-form{
     padding: 10px;
     background-color: #294380;
@@ -37,36 +33,25 @@ main{
 .container-form label, .container-form h2{
     color: #b9f1d6;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover{
+    background-color: #b9f1d6;
+     box-shadow: 0 4px 6px rgba(26, 26, 11, 0.922);
+
     
 }
 
-.container-busca{
-    
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #69d2cd;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
+button:active{
+    background-color: #52a77f;
 }
 
-.container-busca label, .container-busca h2{
-    
-    color: #0d0f36;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
+button:visited{
+   background: linear-gradient(177deg,#66bc6a,#478d4c);
+    transform:  scale(0.95) translate(2px);
+    box-shadow: inset0 4px 6px rgba(0,0,0,4);
 
-footer p{
-    
-    text-align: center ;
-    padding:50px;
-    margin: 0;
-    background-color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #0d0f36;
-    color: #f1f6ce;
-    
-}
+} 
 
 .btn-cadastrar{
 
@@ -85,19 +70,71 @@ footer p{
    
  
 }
-button:hover{
-    background-color: #b9f1d6;
-     box-shadow: 0 4px 6px rgba(26, 26, 11, 0.922);
 
+/*Estrutura de busca */
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+.container-busca input{
+    height: 25px;
+}
+
+.container-busca{
+    
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #69d2cd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.container-busca label, .container-busca h2{
+    
+    color: #0d0f36;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
-button:active{
-    background-color: #52a77f;
+
+/*Estrutura do Cards*/
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px; 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 16px;
 }
 
-button:visited{
-   background: linear-gradient(177deg,#66bc6a,#478d4c);
-    transform:  scale(0.95) translate(2px);
-    box-shadow: inset0 4px 6px rgba(0,0,0,4);
-
+.card-usuario {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px; 
+    border: 1px solid #0d0f36; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.card-usuario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*Rodapé*/
+footer p{
+    
+    text-align: center ;
+    padding:50px;
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #0d0f36;
+    color: #f1f6ce;
+    
+}
+
+
+
